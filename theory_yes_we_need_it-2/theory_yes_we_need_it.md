@@ -37,8 +37,7 @@ the first three operations are filter, project, and product
 -	project: takes single relation and removes some attributes AND ALSO REMOVES DUPS unlike the sql project operation (to make it distinct you must add distinct)
 
 -	product: produces the set of all pairs of rows from first and second args
-	very difficult to find a useful real-life example of a product 
-	but we can imagine that we want to find all flights from all airports in the entire world to any other airport
+	-  very difficult to find a useful real-life example of a product, but we can imagine that we want to find all flights from all airports in the entire world to any other airport
 
 	after having covered these you may feel cheated: where was join, in that list? 
 	join is a product followed by a filter
