@@ -66,7 +66,15 @@
 - usually these stats aren't known during app development and may change throughout lifecycle
 
 ## Index Structures
+- begin with abstract definition of what kind of storage structure can be called an index, then limns the most common index structures
+
 ###	What Is an Index?
+- index has three necessary descriptors: redundant data structure, invisible to application, and designed to speed up data selection based on certain criteria
+  - redundancy means that index can be dropped without data loss and recreated from data stored elsewhere
+  - invisibility means application can't detect if index is present or not
+  - index is created with the hope that it improves performance of a specific query or several
+    - perf improvement has a cost: as index is redundant, it must be updated when table data are updated
+
 ###	B-Tree Indexes
 ###	Why Are B-Trees Used So Often?
 ###	Bitmaps
